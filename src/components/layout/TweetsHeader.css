@@ -1,0 +1,39 @@
+.feed__header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border-right: 1px solid var(--twitter-background);
+  padding-left: 5px;
+  padding-top: 15px;
+}
+
+.feed__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.MuiButtonBase-root.header__button {
+  background-color: var(--twitter-color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px;
+  height: 30px;
+  margin-bottom: 16px;
+}
+
+.feed__header.liked__tweets {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.switch > .MuiFormControlLabel-root {
+  margin: 0 auto;
+}
+
+.switch {
+  align-items: center;
+}

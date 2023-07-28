@@ -1,0 +1,86 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
+}
+
+.post__body {
+  flex: 1;
+  padding: 10px;
+}
+
+.post__body > img {
+  border-radius: 20px;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.post__headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.post__headerText > h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.post__badge {
+  font-size: 14px !important;
+  color: var(--twitter-color);
+}
+
+.post__headerSpecial {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
+}
+
+.post__avatar {
+  padding: 20px;
+}
+
+.post__actions {
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 30px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.post__actions.post__like:hover {
+  background-color: rgb(255, 181, 216);
+}
+
+.post__actions.post__retweet:hover {
+  background-color: #baf4dd;
+}
+
+.post__actions.post__comment:hover,
+.post__actions.post__share:hover {
+  background-color: #c8e6f8;
+}
+
+.post__actions.post__like:hover > .MuiSvgIcon-root {
+  fill: rgb(247, 4, 118);
+}
+
+.post__actions.post__retweet:hover > .MuiSvgIcon-root {
+  fill: #19cf86;
+}
+
+.post__actions.post__comment:hover > .MuiSvgIcon-root,
+.post__actions.post__share:hover > .MuiSvgIcon-root {
+  fill: var(--twitter-color);
+}
+
+.MuiSvgIcon-root.post__liked {
+  fill: rgb(247, 4, 118);
+}

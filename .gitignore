@@ -1,0 +1,4 @@
+# Project
+.vscode
+node_modules
+/build

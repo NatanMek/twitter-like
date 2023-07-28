@@ -1,0 +1,41 @@
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.feed {
+  flex: 0.4;
+  border-right: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+.feed__posts.posts__liked {
+  background-color: #c0e5fc;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: inherit;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.feed__posts {
+  margin-top: 20px;
+}
+
+.feed__posts.posts__liked > .MuiButtonBase-root {
+  background-color: var(--twitter-color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.feed__posts.posts__liked > h3 {
+  margin-left: 20px;
+}
